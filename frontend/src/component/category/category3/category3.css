@@ -1,0 +1,1209 @@
+.item {
+  width: 100%;
+  max-width:350px;
+  margin-bottom: 20px; /* Add margin at the bottom to create separation */
+  text-align: center;
+  padding-bottom: 20px;
+  
+ 
+  /* Add a border for clarity */
+ 
+}
+
+.item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.item-prices{
+  /* display:flex;
+  flex-direction: column;
+  align-items: center; */
+  gap:20px;
+}
+.item-price-new{
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  gap: 8px; /* Add some spacing between cut price and actual price */
+  color:black;
+  font-size:16px;
+  font-weight: 500;
+  padding-bottom: 20px;/* Add padding for better spacing */
+}
+
+
+.item-price-new p {
+  margin: 0; /* Remove default margin to align text properly */
+}
+
+.item-price-new .cut-price {
+  margin-right: 10px; /* Add some spacing between cut price and actual price */
+}
+
+ .item:hover{
+  transform: scale(1.05);
+  transition: 0.6s;
+} 
+ .popular{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  z-index: 1; 
+  
+
+}
+
+.popular h1{
+  color:black;
+  font-size:40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+ 
+}
+
+
+.popular-item {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+} 
+
+.item button {
+  background-color: #D46A3B; /* Choose your desired button color */
+  color: #fff; /* Set text color to white for better visibility */
+  border: none;
+  padding: 10px 90px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Adjust margin to move the button up */
+  /* Add border-radius for rounded corners */
+}
+/* Add this to your CSS file */
+.cut-price {
+  color: grey; /* Set the color for cut price */
+  text-decoration: line-through; /* Add a strikethrough effect for cut price */
+  margin-right: 10px; /* Add some spacing between cut price and actual price */
+}
+
+.actual-price {
+  color: black; /* Set the color for actual price */
+}
+
+
+.popular {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.popular-header{
+  font-size: 35px;
+  display: inline-block;
+  margin-bottom: 10px; 
+  margin-top: 25px;
+}
+
+.view-all-popular{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 110px; /* Adjust the margin as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+  font-size: 16px;
+  color: #000; /* Black color */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.view-all-popular:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .popular-item {
+    gap: 10px;
+  }
+  
+  .item button {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    max-width: 100%;
+  }
+  
+  .item button {
+    width: 100%;
+  }
+}
+
+
+
+/* CategoryDetails.css */
+
+/* Container for the entire page */
+.category-details-page {
+  display: grid;
+  grid-template-columns:  1fr; /* Two columns with equal width repeat(2, 1fr); */
+  grid-gap: 20px; /* Adjust the gap between columns */
+  align-items: start;
+  margin-top: 30px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;; /* Two images in one row        1fr 1fr;*/
+  grid-gap: 10px;
+  padding: 0 20px;
+  align-self: flex-start; /* Align image container to flex-start */
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.price-details {
+  display: flex;
+  align-items: baseline; /* Align elements to their baselines */
+  margin-bottom: 10px; /* Add space below the price details */
+}
+
+.cut-price {
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-right: 10px; /* Add space between cut price and actual price */
+}
+
+.actual-price {
+  font-size: 20px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the actual price bold */
+}
+
+
+/* Left column containing breadcrumbs and images    
+grid-column: 1 / 2;
+  margin-left: 100px; */
+.image-column {
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.breadcrumbs {
+  margin-bottom: 25px; /* Add space between breadcrumbs and images */
+  padding: 0 20px;
+ 
+  max-width: 100%; /* Ensure breadcrumbs don't overflow on smaller screens */
+  
+}
+.breadcrumbs a {
+  color: black; /* Set the color to your desired text color */
+  
+  text-decoration: none; /* Remove the underline */
+}
+.breadcrumbs span{
+  font-weight:600;
+  
+}
+
+
+
+.small-image {
+  width: 100%; /* Adjust the size of the smaller images */
+  margin-bottom: 2px; /* Add space between smaller images */
+  height:auto;
+}
+
+/* Right column containing other details */
+.details-container {
+ /*  grid-column: 2 / 3;  
+  width: 65%; 
+  align-self: flex-start;  
+  margin-top: 40px; 
+  margin-left: 30px; */
+   
+  align-self: flex-start; 
+  padding: 0 20px;
+  width: 100%;
+  margin-top: 40px; /* Adjust the margin as needed */
+}
+
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  /* Two columns with equal width for larger screens */
+  
+ .category-details-page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-column {
+    margin-left: 90px;
+  }
+
+  .details-container {
+    width: 100%;
+  
+  }
+  .image-container {
+    padding: 0;
+  }
+}
+
+.description-container {
+  /* Add styles to limit the description to three lines and reduce font size */
+  max-width: 100%; /* Ensure description doesn't overflow on smaller screens */
+font-weight: 350;
+max-height: none; /* Limit to three lines */
+overflow: hidden;
+text-overflow: ellipsis; /* Show ellipsis for overflow */
+
+  font-size: 30px; /* Adjust the font size as needed */
+  white-space: normal; /* Allow wrapping */
+}
+.heart-icon{
+  font-size: 30px;
+  margin-left: 30px;
+  
+
+}
+
+
+
+.description-container  {
+  /* Apply styles specifically to the paragraph within description-container */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+
+/* Other details styles go here */
+
+
+/* Add these styles to your existing CSS */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-width: 60%;
+  width:300px;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+
+.popup-image {
+  max-width: 20%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.desc {
+  flex: 1;
+  width:45%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.desc p {
+  margin: 0;
+  font-size:10px;
+  text-align: left;
+  /* margin-bottom:90px; */
+ 
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #0e0e0e;
+  cursor: pointer;
+  align-self: flex-start; /* move close button to the top */
+  margin-right: 20px;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.color-container p,.size-container p,.material-container p,.quantity-container p{
+
+font-size: 19px;
+font-weight: 400;
+}
+
+.selected-color {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+.tiny-color-image {
+  width: 50px; /* Adjust the width of the tiny color image */
+  height: auto;
+  margin-right: 15px; /* Add margin between tiny color images */
+}
+
+
+.size-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.size-container p {
+  margin: 0;
+  
+  
+}
+
+.size-text-and-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between  ;
+  width:85%;
+  margin-top: -20px;
+}
+
+
+
+.size-chart-link {
+  color: #0e0e0e;
+  cursor: pointer;
+  text-decoration: none;
+  
+  /* display: flex;
+  margin-left: auto; */
+}
+
+
+
+.size-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.size-container li {
+  margin: 0 5px 5px 0;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  min-width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #6c6c6c;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.size-container li:first-child {
+  margin-left: 0;
+}
+
+.size-container li:last-child {
+  margin-right: 0;
+}
+
+.size-container li.selected {
+  background-color: #000;
+  color: #fff;
+}
+
+.size-container li:not(.selected):hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.size-container li:not(.selected):active {
+  background-color: #000;
+  color: #fff;
+}
+
+.size-container li.disabled {
+  background-color: #b9b5b5;
+  color: #504c4c;
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.size-popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(.9);
+  z-index: 99999;
+  width: 40%;
+  height: 100%;
+  max-height: 600px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  transition: all .3s ease-in-out;
+}
+
+.close-pop {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  color: #000;
+  border: none;
+ 
+}
+.size-popup {
+  height: 100%;
+  overflow-y: auto;
+}
+.header-wrap {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+.header-title {
+  font-size: 25px;
+}
+.size-chart-img {
+  height: 100%;
+  padding: 15px 0;
+}
+.size-chart-img img{
+  max-width: 100%;
+}
+
+
+.material-container {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+ 
+}
+
+
+.material-circle {
+  
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: -60px;
+ 
+}
+
+.material-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.material-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 0;
+}
+
+.color-container,.size-container,.size-container,.quantity-container,.quantity-controls,.material-container,.add-to-cart-btn,.whatsapp-icon,.shipping-container{
+  margin-bottom: 15px;
+}
+
+.quantity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.quantity-controls {
+  display: flex;
+  
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-right: 10px;
+  width: 140px;
+  height: 40px;
+  background-color: #f9f9f9;
+  outline: none;
+}
+.quantity-box {
+  display: flex;
+  align-items: center;
+  
+  width: 33.33%;
+  height: 100%;
+  border-right: 2px solid #bdb9b9;
+  border-left: 2px solid #bebaba;
+  border-radius: 4px;
+}
+
+.quantity-box:first-child {
+  border-left: none;
+}
+
+.quantity-box:last-child {
+  border-right: none;
+}
+
+.quantity-box button,
+.quantity-box span {
+  margin: 0; /* Remove default margin to ensure consistent spacing */
+  font-size: 16px; /* Adjust font size as needed */
+}
+.quantity-controls button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #9f9a9a;
+}
+.quantity-controls span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #1d1c1c;
+}
+
+
+
+/* Push WhatsApp icon to the right end */
+.whatsapp-icon {
+  margin-left: auto; 
+  margin-top: -45px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.whatsapp-icon svg {
+  margin-right: 75px; /* Add some space between WhatsApp icon and text */
+}
+
+
+
+.add-to-cart-btn {
+ 
+  width:45%;
+  height: 50px;
+  background-color: #ea6f10;
+  border: none;
+ margin-right: 10px;
+  font-size: 16px;
+  color: #f8f1f1;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  color: #000;
+}
+
+.add-to-cart-btn:focus {
+  box-shadow: 0 0 0 0.2rem #c6926a;
+}
+
+
+
+.buy-now-btn {
+  padding: 0 30px;
+  width:45%;
+  height: 50px;
+  background-color: #060606;
+  border: none;
+ 
+  font-size: 16px;
+  color: #f8f1f1;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+.zipcode-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px; /* Add margin between the zipcode container and the button */
+}
+
+.zipcode-input-container {
+  display: flex;
+ 
+  align-items: center;
+}
+
+.zip {
+  margin-right: 10px; /* Add spacing between the input and the button */
+  border: 2px solid #d6cece; /* Set the border color to a darker color, adjust as needed */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 6px; /* Adjust padding as needed for spacing inside the input */
+  /* Make the input box take 100% width of its container */
+  font-size: 16px; /* Set the font size as needed */
+  outline: none; /* Remove the default outline */
+  width: 100%;
+  
+}
+
+.check-delivery {
+  font-size: 20px; /* Adjust the font size as needed */
+  font-weight: 400;
+  margin-bottom: 5px; /* Add margin between "Check Delivery" and the input */
+}
+
+.check-availability {
+  /* Add margin between the input and "Check Availability" button */
+  padding: 0 6px;
+ width:100%;
+  height: 45px;
+  background-color: #ea6f10;
+  border: none;
+  border-radius: 5px;
+ 
+  font-size: 16px;
+  color: #f8f1f1;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+  .add-to-cart-btn,
+  .buy-now-btn {
+    width: 45%; /* Adjust the width of the buttons for larger screens */
+  }
+
+  .check-availability {
+    width: auto; /* Allow the button to take natural width on larger screens */
+  }
+
+  .zipcode-input-container {
+    flex-direction: row; /* Align input and button in a row on larger screens */
+  }
+
+  .zip {
+    width: auto; /* Allow the input to take natural width on larger screens */
+    margin-bottom: 0; /* Remove spacing between input and button */
+  }
+
+  /* Adjust the font size and margin for the "Check Delivery" text on larger screens */
+  .check-delivery {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+.ask-question {
+
+
+ 
+   padding: 0 10px; 
+  width:50%;
+  height: 40px;
+  background-color: #fcf3f3;
+  border: 2px solid black;
+ 
+  font-size: 16px;
+  color: #0e0e0e;
+  outline:none;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+   /* Add margin between "Ask Question" button and the content above */
+}
+/* Add this to your existing CSS or create a new CSS file */
+.modal-container {
+  
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+    transition: all 0.3s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    background-color: #fefefe;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 600px;
+    margin: 0 !important;
+   
+}
+
+#formtitle h2 {
+ 
+  font-weight: bold;
+  line-height: 1.42857143;
+  color: black;
+  font-size: 16px;
+  margin: 0; /* Add this to remove default margin */
+  padding: 14px;
+  text-align: center ; 
+}
+
+.modal-header {
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.modal-header .close {
+  color: #aaaaaa;
+   
+    
+    font-weight: 600;
+    
+   
+    opacity: 0.7;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 29px;
+  cursor: pointer;
+}
+
+.modal-header h2 {
+  margin:0;
+}
+.model-content-box {
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+ 
+  display: flex;
+  flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+    gap: 15px;
+    border-radius: 4px;
+    height: auto;
+    background-color: rgb(232, 232, 232);
+    border-color: rgb(232, 232, 232);
+    padding: 20px;
+}
+
+.model-content-box-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 25px;
+  background-color: #fff;
+}
+
+.model-in {
+  
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  letter-spacing: .5px;
+
+
+ 
+}
+
+.error_cls {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  background-color: #060606;
+  color: #fff;
+  border: none;
+  
+  padding: 10px 15px;
+  
+  letter-spacing: .5px;
+ 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #138420;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .ask-question {
+    width: 100%; /* Make the button take full width on smaller screens */
+  }
+
+  .modal-container {
+    width: 90%; /* Adjust the width of the modal for smaller screens */
+  }
+
+  #formtitle h2 {
+    font-size: 14px; /* Adjust the font size of the form title on smaller screens */
+  }
+
+  .model-content-box {
+    padding: 15px; /* Adjust the padding of the modal content box on smaller screens */
+  }
+
+  .submit-btn {
+    padding: 8px 12px; /* Adjust the padding of the submit button on smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+ul.shipping-icon-list {
+  display: flex;
+  overflow-x: auto;
+}
+ul.shipping-icon-list  {
+  list-style: none;
+  padding: 0;
+}
+li.shipping-icon {
+  text-align: center;
+  padding-right: 15px;
+  max-width: 130px;
+}
+.shipping-icon img {
+  max-width: 50px;
+  max-height: 37px;
+  object-fit: contain;
+}
+.shipping-icon span {
+  display: block;
+  line-height: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.category-dropdown summary {
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: 500;
+}
+
+.phone-icon,
+.email-icon {
+  margin-right: 9px; /* Adjust the margin as needed */
+}
+.category-dropdown h6{
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+
+/* Add your existing CSS styles here */
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+ margin-top: 80px;
+}
+
+.review-container .jdgm-rev-widg__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.review-container .jdgm-rev-widg__title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.review-container .jdgm-row-stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.jdgm-rev-widg__summary-stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.jdgm-rev-widg__summary-stars div {
+  font-size: 48px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.review-container .jdgm-rev-widg__summary-stars {
+ 
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.review-container .jdgm-rev-widg__summary-text {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.review-container .jdgm-widget-actions-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.review-container .jdgm-write-rev-link {
+  background-color:black;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+}
+
+.review-container .jdgm-write-rev-link:hover {
+  background-color:black;
+}
+
+@media screen and (max-width: 768px) {
+  .review-container {
+    padding: 1rem;
+  }
+
+  .review-container .jdgm-rev-widg__title {
+    font-size: 1.5rem;
+  }
+
+  .review-container .jdgm-row-stars {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-container .jdgm-rev-widg__summary-stars {
+    margin-bottom: 1rem;
+  }
+
+  .review-container .jdgm-rev-widg__summary-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .review-container .jdgm-widget-actions-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-container .jdgm-write-rev-link {
+    margin-top: 1rem;
+    margin-right: 0;
+  }
+}
+
+
+.jdgm-form-wrapper {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.jdgm-form__fieldset {
+  margin-bottom: 1rem;
+  
+  
+  }
+
+
+.jdgm-form__fieldset label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.jdgm-form__fieldset input,
+.jdgm-form__fieldset textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.jdgm-form__fieldset input:focus,
+.jdgm-form__fieldset textarea:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #191919;
+}
+
+.jdgm-form__rating {
+  display: flex;
+  justify-content: center;
+ margin-top: -30px;
+ 
+ 
+}
+
+.jdgm-form__rating div {
+  font-size: 48px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 1rem 0;
+}
+
+.jdgm-form__fieldset-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+.jdgm-btn, input[type=submit].jdgm-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  width:500px;
+}
+/* .jdgm-btn {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #121111;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.jdgm-btn:hover {
+  background-color: #0e0e0e;
+}
+
+.jdgm-btn:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #0e0d0d;
+} */
+.jdgm-cancel-rev,
+.jdgm-submit-rev {
+  padding: 10px 20px; /* Adjust the padding to control the button size */
+  margin-right: 10px;
+  background-color: #fcfafa;
+  color: #0a0a0a;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+/* .jdgm-cancel-rev {
+ 
+  background-color:white ;
+  color: #0c0c0c;
+  border: 1px solid #0b0b0b;
+}
+
+.jdgm-cancel-rev:hover {
+  background-color: #0b0b0b;
+}
+
+.jdgm-cancel-rev:focus {
+  box-shadow: 0 0 2px 1px #ccc;
+} */
+.jdgm-submit-rev {
+  background-color: #090909;
+  color: #fff;
+}
+

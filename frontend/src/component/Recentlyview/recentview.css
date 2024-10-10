@@ -1,0 +1,108 @@
+
+/* recentview.css */
+
+.view-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+
+   
+ 
+  }
+ 
+
+  .view-section-header {
+    font-size: 35px;
+    display: inline-block;
+    margin-bottom: 10px; 
+    margin-top: 25px;
+  }
+  
+ 
+  
+  .view-section h2 {
+    color: black;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .view-item {
+   
+    
+
+    width: 100%;
+    /* max-width: 350px;  margin-bottom: 20px; padding-bottom: 20px;*/
+    height: 100%;
+   
+    text-align: center;
+    padding: 5px;
+    
+  
+  margin: 10px;
+  }
+  
+  .view-item img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+  }
+ 
+
+
+
+  .item-description{
+    text-align: center;
+  }
+
+@media (max-width: 768px) {
+    
+  
+    .view-item {
+        width:225px;
+        padding: 5px;
+   
+    margin: 10px;
+      }
+      .view-item p {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .item-description {
+        margin-bottom: 5px;
+      }
+
+      .item-prices {
+        margin-top: 5px;
+      }
+    
+      .actual-price,
+      .cut-price {
+        font-size: 12px;
+      }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .view-item {
+    max-width: 100%;
+           display: flex;
+           justify-content: center;
+       }
+    .view-item p {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+   
+  }
+
+

@@ -1,0 +1,263 @@
+.filters-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.filter-container {
+  width: 100%;
+}
+
+.filter-bar-container {
+  align-self: flex-start;
+}
+
+
+.gf-actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gf-filter-trigger {
+  margin-right: 16px;
+}
+.gf-filter-selection {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+
+/* Filter.css */
+
+/* .filter-container {
+   position: relative; 
+
+ 
+  margin-bottom: 20px; 
+}
+.filter-bar-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+
+.ahika-plus-container {
+ 
+
+ margin: 0 70px;
+}
+
+
+
+  .filter-bar-container 
+  { margin-top: auto;  align-self: flex-end;}
+  .gf-actions { display: flex; align-items: flex-end; 
+    justify-content: flex-end;  }
+
+  .gf-summary { margin-right: 20px;  }
+
+
+
+
+
+.filter-type{
+  font-weight: 600;
+}
+.filter-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  width: 200px; }
+
+.filter-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+} 
+.filter-content li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.filter-content li:hover {
+  background-color: #f0f0f0;
+}
+
+.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+
+
+
+.breadcrumb-container {
+  padding: 10px;
+  
+}
+
+
+
+
+
+
+.breadcrumb-container {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.ahika{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.breadcrumb-container a {
+  text-decoration: none;
+  color: #333; 
+}
+
+.thicker-header {
+  background-color: #f0f0f0; 
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.thicker-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #413e3e; 
+}
+
+
+
+
+
+
+
+.separator {
+  width: 15%;
+  height: 2px;
+  background-color: #9e9b9b; 
+  margin: 10px 0; 
+}
+
+
+.page-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin: 0 70px; 
+}
+
+
+
+
+
+/* Style your checkboxes */
+/* input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Style the label to appear like a clickable button */
+  /* label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .gf-option-box {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .gf-option-box li {
+    margin-bottom: 10px; 
+  }   */
+
+
+
+
+
+/* PriceFilter.css */
+
+/* .dropdown-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid black; 
+  margin-right: 5px;
+}
+
+.up {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid black; 
+}
+.price-filter {
+  max-width: 200px; 
+}
+
+.gf-block-content {
+  width: 100%; 
+}
+
+.gf-scroll {
+  margin: 10px 0; 
+}
+
+.rc-slider {
+  width: 100%; 
+}
+
+.gf-range-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gf-range-min,
+.gf-range-max {
+  width: 40%; 
+}
+
+.gf-clear {
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+
+
+.rc-slider {
+  width: 100%;
+}
+
+.rc-slider-track {
+  background-color: #808080; 
+}
+
+.rc-slider-handle {
+  border-color: #000;
+  background-color: #000; 
+} */ 
